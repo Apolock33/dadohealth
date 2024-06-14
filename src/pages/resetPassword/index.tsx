@@ -2,9 +2,8 @@ import { useFormik } from "formik";
 import { Button } from "primereact/button";
 import { FloatLabel } from "primereact/floatlabel";
 import { InputText } from "primereact/inputtext";
-import { Password } from "primereact/password";
 import { Toast } from "primereact/toast";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import imgLogin from "../../assets/imgs/imgLogin.jpg";
 import Logo from '../../assets/imgs/logo dadohealth.png'
 import { useContext, useRef } from "react";

@@ -1,4 +1,4 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { GlobalContext } from "../../contexts/global/globalContext";
 import '../../assets/css/scheduling.css';
 import FullCalendar from '@fullcalendar/react';
@@ -14,7 +14,6 @@ const Scheduling = () => {
   const [events, setEvents] = useState<any>([]);
   const { readScheduleList } = useContext(SchedulingContext)
   const { mobileOpen } = useContext(GlobalContext);
-  const calendarRef = useRef<FullCalendar>(null);
 
   const fetchEvents = async () => {
     try {

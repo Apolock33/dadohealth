@@ -9,13 +9,11 @@ import { CRMContext } from "../../../../contexts/crm/crmContext";
 import { SchedulingContext } from "../../../../contexts/scheduling/schedulingContext";
 import { generateFirebaseId } from "../../../../services/api";
 import { Toast } from "primereact/toast";
-import FullCalendar from "@fullcalendar/react";
 
 const FastSchedule = ({ children }: any | null) => {
     const [pacientList, setPacientList] = useState<Pacient[]>([]);
     const [doctorsList, setDoctorsList] = useState<Pacient[]>([]);
     const toast = useRef<Toast>(null!);
-    const calendarRef = useRef<FullCalendar>(null);
 
     const {
         getPacientList
@@ -99,7 +97,7 @@ const FastSchedule = ({ children }: any | null) => {
             values.endDate = new Date(values.endDate).toISOString();
             console.log(values)
             createSchedule(values.id, values)
-                .then((values: any) => {
+                .then(() => {
                     toast.current?.show({ severity: 'success', summary: 'Agendado!', detail: 'Agendamento Realizado', life: 3000 });
                 })
                 .catch((err: any) => {
@@ -138,7 +136,7 @@ const FastSchedule = ({ children }: any | null) => {
                             formik.setFieldValue('startDate', e.target.value)
                             console.log(e.target.value)
                         }}
-                        showTime 
+                        showTime
                         hourFormat="24"
                         dateFormat="dd/mm/yy"
                     />
@@ -155,7 +153,7 @@ const FastSchedule = ({ children }: any | null) => {
                         onChange={(e: any) => {
                             formik.setFieldValue('endDate', e.target.value);
                         }}
-                        showTime 
+                        showTime
                         hourFormat="24"
                         dateFormat="dd/mm/yy"
                     />

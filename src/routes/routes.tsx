@@ -3,7 +3,7 @@ import PacientCRM from '../pages/pacients';
 import ProfessionalCRM from '../pages/professionalsList';
 import PacientCRMAdd from '../pages/pacients/pacientCrmAdd';
 import Login from '../pages/login';
-import { Children, useContext } from 'react';
+import { useContext } from 'react';
 import { AuthContext } from '../contexts/auth/authContext';
 import { RequireAuth } from './requireAuth';
 import ResetPassword from '../pages/resetPassword';

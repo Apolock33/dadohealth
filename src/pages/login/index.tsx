@@ -1,4 +1,4 @@
-import { useContext, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import { AuthContext } from "../../contexts/auth/authContext";
 import { Link, useNavigate } from "react-router-dom";
 import '../../assets/css/login.css';
@@ -16,7 +16,6 @@ import { UserContext } from "../../contexts/user/userContext";
 const Login = () => {
     const toast = useRef<Toast>(null);
     const {
-        user,
         setUser,
         updateToken,
         signIn,

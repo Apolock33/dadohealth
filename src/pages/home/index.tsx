@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = (prop: { children: any; }) => {
+const Home = () => {
     return (
         <React.Fragment>
             
