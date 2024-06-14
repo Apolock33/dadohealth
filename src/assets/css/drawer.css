@@ -1,0 +1,13 @@
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    width: 25rem !important;
+}
+
+.button-width {
+    width: 100%;
+    border-radius: 2rem !important;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--primary-color);
+}

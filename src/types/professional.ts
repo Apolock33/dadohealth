@@ -1,0 +1,21 @@
+type Professional = {
+    id?: string;
+    email?: string;
+    name?: string;
+    cpf?: string;
+    pic?: string;
+    userType?: string;
+    expertise?: string;
+    adm?: boolean;
+    concierge?: boolean;
+    blockUser?: boolean;
+    blockProntuary?: boolean;
+    blockFinances?: boolean;
+    blockDocumentation?: boolean;
+    blockEvolutions?: boolean;
+    blockDiary?: boolean;
+    identificationType?: string;
+    identificationNumber?: string;
+    identificationUF?: string;
+    createDate?: Date;
+};

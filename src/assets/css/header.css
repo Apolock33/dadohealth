@@ -1,0 +1,21 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white;
+}
+
+.p-menubar {
+    border-bottom: var(--primary-color) !important;
+}
+
+.navlinks {
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+.navlinks:hover {
+    color: var(--secondary-color) !important;
+}

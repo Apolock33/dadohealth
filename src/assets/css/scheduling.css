@@ -1,0 +1,28 @@
+.css-1d8d7kz-MuiPaper-root {
+    flex-direction: column !important;
+}
+
+.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+    font-style: 'Outfit', sans-serif !important;
+}
+
+.fc .fc-button-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.fc .fc-toolbar-title {
+    color: var(--primary-color) !important;
+}
+
+.fc .fc-col-header-cell-cushion{
+    color: var(--primary-color) !important;
+}
+
+.fc .fc-daygrid-day-number{
+    color: var(--primary-color) !important;
+}
+
+.fc .fc-daygrid-day.fc-day-today{
+    background-color: var(--tertiary-color) !important;
+}
